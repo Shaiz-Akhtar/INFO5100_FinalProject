@@ -107,24 +107,29 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(1000, 1000));
         setLayout(new java.awt.CardLayout());
 
-        registerNew.setBackground(new java.awt.Color(255, 255, 255));
+        registerNew.setBackground(new java.awt.Color(54, 33, 89));
+        registerNew.setForeground(new java.awt.Color(255, 255, 255));
         registerNew.setMaximumSize(new java.awt.Dimension(1000, 1000));
         registerNew.setPreferredSize(new java.awt.Dimension(1000, 1000));
         registerNew.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Enter the below details to register your company");
         registerNew.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 139, 664, 40));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel4.setForeground(java.awt.Color.white);
         jLabel4.setText("Company Name:");
         registerNew.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 148, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(java.awt.Color.white);
         jLabel5.setText("Assets (USD):");
         registerNew.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setForeground(java.awt.Color.white);
         jLabel6.setText("Liabilities (USD):");
         registerNew.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 148, -1));
 
@@ -174,7 +179,6 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("New Company Registration ");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("<< Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -237,7 +241,6 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         jPanel4.setToolTipText("");
         jPanel4.setPreferredSize(new java.awt.Dimension(1000, 80));
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
         jButton5.setText("<< Back");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -253,14 +256,14 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(jButton5)
-                .addContainerGap(972, Short.MAX_VALUE))
+                .addContainerGap(977, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jButton5)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout requestListingLayout = new javax.swing.GroupLayout(requestListing);
@@ -282,7 +285,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
                         .addGap(304, 304, 304)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 1094, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(347, Short.MAX_VALUE))
+                .addContainerGap(351, Short.MAX_VALUE))
         );
         requestListingLayout.setVerticalGroup(
             requestListingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -362,7 +365,6 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setText("Assigning Investment Manager");
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton6.setText("<< Back");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -423,7 +425,6 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Welcome Company Manager ");
 
-        jButton9.setBackground(new java.awt.Color(255, 255, 255));
         jButton9.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jButton9.setText("<< Back");
         jButton9.addActionListener(new java.awt.event.ActionListener() {

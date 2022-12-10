@@ -19,6 +19,7 @@ import com.stockops.Market.Commodity;
 import com.stockops.Market.Equity;
 import com.stockops.Users.UserAccount;
 import java.awt.event.ActionEvent;
+import com.stockops.UI.MainJFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -77,6 +78,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jButton20 = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         txtName = new javax.swing.JLabel();
+        jButton24 = new javax.swing.JButton();
         confirmShareBuy = new javax.swing.JPanel();
         btnBuyShare1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
@@ -203,23 +205,27 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        homepage.setBackground(new java.awt.Color(255, 255, 255));
+        homepage.setBackground(new java.awt.Color(54, 33, 89));
         homepage.setMaximumSize(new java.awt.Dimension(1300, 800));
         homepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Available Balance:");
         homepage.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         txtBal.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        txtBal.setForeground(new java.awt.Color(255, 255, 255));
         txtBal.setText("Available balance");
         homepage.add(txtBal, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Total P/L:");
         homepage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
 
         lblProfitLoss.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblProfitLoss.setForeground(new java.awt.Color(255, 255, 255));
         lblProfitLoss.setText("Total P/L:");
         homepage.add(lblProfitLoss, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, -1, -1));
 
@@ -283,14 +289,14 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jButton20.setBackground(new java.awt.Color(85, 65, 118));
         jButton20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton20.setForeground(new java.awt.Color(255, 255, 255));
-        jButton20.setText("My Sell Request");
+        jButton20.setText("Logout");
         jButton20.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 204, 204)));
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
             }
         });
-        homepage.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 580, 200, 60));
+        homepage.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 100, 200, 60));
 
         jPanel16.setBackground(new java.awt.Color(85, 65, 118));
 
@@ -317,6 +323,18 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         );
 
         homepage.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 70));
+
+        jButton24.setBackground(new java.awt.Color(85, 65, 118));
+        jButton24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton24.setForeground(new java.awt.Color(255, 255, 255));
+        jButton24.setText("My Sell Request");
+        jButton24.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 204, 204)));
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+        homepage.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 580, 200, 60));
 
         add(homepage, "card2");
 
@@ -407,7 +425,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton11.setBackground(new java.awt.Color(255, 255, 255));
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton11.setText("<< Back");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -472,7 +489,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel3.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton9.setBackground(new java.awt.Color(255, 255, 255));
         jButton9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton9.setText("<< Back");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -602,7 +618,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jPanel4.setBackground(new java.awt.Color(85, 65, 118));
         jPanel4.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton12.setBackground(new java.awt.Color(255, 255, 255));
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton12.setText("<<Back");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -624,7 +639,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                 .addComponent(jButton12)
                 .addGap(256, 256, 256)
                 .addComponent(jLabel33)
-                .addContainerGap(1241, Short.MAX_VALUE))
+                .addContainerGap(1255, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -738,7 +753,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel5.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton13.setBackground(new java.awt.Color(255, 255, 255));
         jButton13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton13.setText("<<Back");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -835,7 +849,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel6.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton14.setBackground(new java.awt.Color(255, 255, 255));
         jButton14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton14.setText("<< Back");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -979,7 +992,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel9.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton16.setBackground(new java.awt.Color(255, 255, 255));
         jButton16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton16.setText("<< Back");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -1109,7 +1121,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel11.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton17.setBackground(new java.awt.Color(255, 255, 255));
         jButton17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton17.setText("<< Back");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
@@ -1253,7 +1264,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jPanel12.setBackground(new java.awt.Color(85, 65, 118));
         jPanel12.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton18.setBackground(new java.awt.Color(255, 255, 255));
         jButton18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton18.setText("<<Back");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -1365,7 +1375,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jPanel13.setBackground(new java.awt.Color(85, 65, 118));
         jPanel13.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton23.setBackground(new java.awt.Color(255, 255, 255));
         jButton23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton23.setText("<< Back");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
@@ -1453,7 +1462,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel14.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton21.setBackground(new java.awt.Color(255, 255, 255));
         jButton21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton21.setText("<< Back");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
@@ -1561,7 +1569,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         jPanel15.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton22.setBackground(new java.awt.Color(255, 255, 255));
         jButton22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton22.setText("<<Back");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
@@ -1717,12 +1724,19 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtAddAmountActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        try{
         Double balToAdd = Double.parseDouble(String.valueOf(txtAddAmount.getText()));
         this.investor.setBalance(this.investor.getBalance() + balToAdd);
         txtBal.setText(String.valueOf(this.investor.getBalance()));
         JOptionPane.showMessageDialog(this, "New Balance: "+this.investor.getBalance());
         setAvailableBalance(String.valueOf(this.investor.getBalance()));
         changeScreen(homepage);
+        }
+        catch(Exception e)
+        {
+          JOptionPane.showMessageDialog(this, "Enter an amount to add");  
+        }
+        
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -1909,9 +1923,10 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        changeScreen(sellRequests);
-        populateEquitySellRequestsTable();
-        populateCommoditySellRequestsTable();
+       
+        
+        
+         
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
@@ -1949,6 +1964,10 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton24ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel addBalance;
@@ -1980,6 +1999,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;

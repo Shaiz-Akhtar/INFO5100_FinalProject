@@ -372,16 +372,16 @@ public class MainJFrame extends javax.swing.JFrame {
         homeJPanelLayout.setHorizontalGroup(
             homeJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homeJPanelLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
+                .addGap(115, 115, 115)
                 .addComponent(jLabel24)
-                .addContainerGap(548, Short.MAX_VALUE))
+                .addContainerGap(567, Short.MAX_VALUE))
         );
         homeJPanelLayout.setVerticalGroup(
             homeJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homeJPanelLayout.createSequentialGroup()
-                .addGap(136, 136, 136)
+                .addGap(129, 129, 129)
                 .addComponent(jLabel24)
-                .addContainerGap(157, Short.MAX_VALUE))
+                .addContainerGap(164, Short.MAX_VALUE))
         );
 
         container.add(homeJPanel, "card4");
