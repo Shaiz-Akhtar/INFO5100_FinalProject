@@ -145,9 +145,10 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(54, 33, 89));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Assigned Company");
 
         jButton1.setBackground(new java.awt.Color(85, 65, 118));
@@ -444,7 +445,6 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
         jPanel7.setBackground(new java.awt.Color(85, 65, 118));
         jPanel7.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton9.setBackground(new java.awt.Color(255, 255, 255));
         jButton9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton9.setText("<<Go Back");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -460,14 +460,14 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addComponent(jButton9)
-                .addContainerGap(1144, Short.MAX_VALUE))
+                .addContainerGap(1158, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jButton9)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -574,7 +574,6 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
         jPanel8.setBackground(new java.awt.Color(85, 65, 118));
         jPanel8.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton11.setBackground(new java.awt.Color(255, 255, 255));
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton11.setText("<<Go Back");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -597,7 +596,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(jButton11)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -750,7 +749,6 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
         jPanel9.setForeground(new java.awt.Color(255, 255, 255));
         jPanel9.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton12.setBackground(new java.awt.Color(255, 255, 255));
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton12.setText("<<Go Back");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -807,7 +805,6 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         jPanel10.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton23.setBackground(new java.awt.Color(255, 255, 255));
         jButton23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton23.setText("<< Back");
         jButton23.addActionListener(new java.awt.event.ActionListener() {

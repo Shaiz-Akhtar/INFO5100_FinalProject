@@ -99,7 +99,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new java.awt.CardLayout());
 
-        MarketModeratorHomepage.setBackground(new java.awt.Color(255, 255, 255));
+        MarketModeratorHomepage.setBackground(new java.awt.Color(54, 33, 89));
         MarketModeratorHomepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton2.setBackground(new java.awt.Color(85, 65, 118));
@@ -127,6 +127,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         MarketModeratorHomepage.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 167, 38));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Dashboard");
         MarketModeratorHomepage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, -1, 40));
 
@@ -215,7 +216,6 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setText("<< Back");
         jButton4.addActionListener(new java.awt.event.ActionListener() {

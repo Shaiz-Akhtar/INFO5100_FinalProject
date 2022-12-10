@@ -97,7 +97,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        homepage.setBackground(new java.awt.Color(255, 255, 255));
+        homepage.setBackground(new java.awt.Color(54, 33, 98));
 
         tableShares.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         tableShares.setModel(new javax.swing.table.DefaultTableModel(
@@ -131,7 +131,9 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
             tableShares.getColumnModel().getColumn(3).setResizable(false);
         }
 
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Top Shares:");
 
         jButton2.setBackground(new java.awt.Color(85, 65, 118));
@@ -157,6 +159,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
         });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Market");
 
         jPanel1.setBackground(new java.awt.Color(85, 65, 118));
@@ -319,7 +322,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
                     .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout buyRequestsLayout = new javax.swing.GroupLayout(buyRequests);
@@ -422,7 +425,6 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Title");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("<< Back");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

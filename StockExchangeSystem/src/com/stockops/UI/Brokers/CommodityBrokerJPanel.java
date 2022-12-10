@@ -83,7 +83,7 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(54, 33, 98));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         commodityTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -158,6 +158,7 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1430, 90));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Available Commodities:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, -1, -1));
 
@@ -211,7 +212,6 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("jLabel4");
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton5.setText("<< Back");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -326,7 +326,6 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
         jPanel6.setBackground(new java.awt.Color(85, 65, 118));
         jPanel6.setPreferredSize(new java.awt.Dimension(0, 80));
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton6.setText("<< Back");
         jButton6.addActionListener(new java.awt.event.ActionListener() {

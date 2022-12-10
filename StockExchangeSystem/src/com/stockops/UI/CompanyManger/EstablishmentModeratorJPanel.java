@@ -91,7 +91,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
         setRequestFocusEnabled(false);
         setLayout(new java.awt.CardLayout());
 
-        listingrequests.setBackground(new java.awt.Color(255, 255, 255));
+        listingrequests.setBackground(new java.awt.Color(54, 33, 89));
         listingrequests.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(85, 65, 118));
@@ -139,7 +139,6 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Compay Manager Liscence Request");
 
-        jBtngoback.setBackground(new java.awt.Color(255, 255, 255));
         jBtngoback.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jBtngoback.setText("<< Back");
         jBtngoback.addActionListener(new java.awt.event.ActionListener() {
@@ -273,7 +272,6 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(1300, 80));
 
-        jButton7.setBackground(new java.awt.Color(255, 255, 255));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton7.setText("<<Back");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -304,7 +302,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton7)
                     .addComponent(jLabel10))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout allCompaniesLayout = new javax.swing.GroupLayout(allCompanies);
@@ -345,7 +343,6 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
 
         jPanel4.setBackground(new java.awt.Color(85, 65, 118));
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton5.setText("<<Back");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
