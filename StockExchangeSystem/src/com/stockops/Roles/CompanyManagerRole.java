@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class CompanyManagerRole extends Role{
 

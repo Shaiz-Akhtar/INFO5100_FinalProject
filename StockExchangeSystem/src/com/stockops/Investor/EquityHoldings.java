@@ -9,7 +9,7 @@ import com.stockops.Market.Equity;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class EquityHoldings {
     Equity equity;

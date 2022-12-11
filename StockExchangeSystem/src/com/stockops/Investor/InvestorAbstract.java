@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class InvestorAbstract extends AppUser{
     private double balance;

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class Market {
     private CommodityMarket commodityMarket;

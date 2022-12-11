@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class CompanyManager extends AppUser{
     private ArrayList<Company> companyList;

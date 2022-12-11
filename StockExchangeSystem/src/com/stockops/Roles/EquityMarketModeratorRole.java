@@ -12,7 +12,7 @@ import com.stockops.UI.EquityMarket.EquityMarketModeratorJPanel;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class EquityMarketModeratorRole extends Role{
 

@@ -7,7 +7,7 @@ package com.stockops.Users;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class AppUser {
     protected int UserId;

@@ -62,7 +62,7 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(54, 33, 89));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -87,6 +87,7 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 120, 687, 122));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Comodity Name");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 291, -1, -1));
 
@@ -94,6 +95,7 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         jPanel1.add(txtComName, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 289, 149, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Symbol");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 344, -1, -1));
 
@@ -106,6 +108,7 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         jPanel1.add(txtSymbol, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 334, 149, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Price");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 392, 70, -1));
 
@@ -113,6 +116,7 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         jPanel1.add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(295, 387, 149, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Unit");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 442, 41, -1));
 

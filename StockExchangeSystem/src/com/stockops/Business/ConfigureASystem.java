@@ -25,7 +25,7 @@ import com.stockops.Roles.MarketAnalyst;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class ConfigureASystem {
 

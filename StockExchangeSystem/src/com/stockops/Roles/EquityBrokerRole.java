@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class EquityBrokerRole extends Role{
 
