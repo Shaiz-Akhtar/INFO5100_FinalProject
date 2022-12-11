@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class Company extends InvestorAbstract{
     

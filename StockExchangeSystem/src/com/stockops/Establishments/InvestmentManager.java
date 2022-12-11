@@ -9,7 +9,7 @@ import com.stockops.Users.AppUser;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class InvestmentManager extends AppUser{
     private double salary;

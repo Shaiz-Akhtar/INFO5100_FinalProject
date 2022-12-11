@@ -10,7 +10,7 @@ import com.stockops.Market.Equity;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class CommodityHoldings {
     Commodity commodity;

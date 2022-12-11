@@ -9,7 +9,7 @@ import com.stockops.Roles.Role;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class UserAccount {
     private String username;

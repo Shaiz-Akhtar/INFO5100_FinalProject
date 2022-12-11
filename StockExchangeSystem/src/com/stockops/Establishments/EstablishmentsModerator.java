@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class EstablishmentsModerator extends AppUser{
     private Establishment establishment;

@@ -7,7 +7,7 @@ package com.stockops.Investor;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class DayTrader extends InvestorAbstract{
     

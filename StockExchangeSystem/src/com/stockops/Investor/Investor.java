@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class Investor {
     private ArrayList<RetailInvestor> retailInvestorDirectory;

@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class RetailInvestorJPanel extends javax.swing.JPanel {
 
@@ -46,7 +46,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         this.investor = (RetailInvestor)account.getUser();
         initComponents();
         txtBal.setText(String.valueOf(this.investor.getBalance()));
-        txtName.setText(this.investor.getName());
+        txtName.setText("Hello Investor");
         setAvailableBalance(String.valueOf(this.investor.getBalance()));
 //        txtAvailableBalance.setText(String.valueOf(this.investor.getBalance()));
         populateEquityTable();
@@ -75,7 +75,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
         jPanel16 = new javax.swing.JPanel();
         txtName = new javax.swing.JLabel();
         jButton24 = new javax.swing.JButton();
@@ -286,18 +285,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         });
         homepage.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 200, 60));
 
-        jButton20.setBackground(new java.awt.Color(85, 65, 118));
-        jButton20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(255, 255, 255));
-        jButton20.setText("Logout");
-        jButton20.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(0, 204, 204)));
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-        homepage.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 100, 200, 60));
-
         jPanel16.setBackground(new java.awt.Color(85, 65, 118));
 
         txtName.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -338,7 +325,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(homepage, "card2");
 
-        confirmShareBuy.setBackground(new java.awt.Color(255, 255, 255));
+        confirmShareBuy.setBackground(new java.awt.Color(54, 33, 89));
         confirmShareBuy.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBuyShare1.setBackground(new java.awt.Color(85, 65, 118));
@@ -353,10 +340,12 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         confirmShareBuy.add(btnBuyShare1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 90, 40));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Quantity");
         confirmShareBuy.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
 
         txtShrName.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        txtShrName.setForeground(new java.awt.Color(255, 255, 255));
         txtShrName.setText("Share Name");
         confirmShareBuy.add(txtShrName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
 
@@ -375,14 +364,19 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         confirmShareBuy.add(txtQtyShare, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 144, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Calculated Price:");
         confirmShareBuy.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, -1, -1));
+
+        lblCLP.setForeground(new java.awt.Color(255, 255, 255));
         confirmShareBuy.add(lblCLP, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 150, 10));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Available Balance:");
         confirmShareBuy.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, -1, -1));
 
+        txtAvailableBalance.setForeground(new java.awt.Color(255, 255, 255));
         txtAvailableBalance.setText("jLabel13");
         confirmShareBuy.add(txtAvailableBalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 300, -1, -1));
 
@@ -396,6 +390,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         confirmShareBuy.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 150, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Select Broker:");
         confirmShareBuy.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, -1));
 
@@ -411,6 +406,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         confirmShareBuy.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 220, -1, -1));
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("Select Market:");
         confirmShareBuy.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, -1, -1));
 
@@ -903,6 +899,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         add(selectCommodityBuy, "card8");
 
         confirmCommodityBuy.setBackground(new java.awt.Color(255, 255, 255));
+        confirmCommodityBuy.setForeground(new java.awt.Color(255, 255, 255));
         confirmCommodityBuy.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBuyComm.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -940,14 +937,16 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel20.setText("Calculated Price:");
         confirmCommodityBuy.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 226, -1, -1));
-        confirmCommodityBuy.add(lblCLP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(299, 226, 97, 25));
+
+        lblCLP2.setForeground(new java.awt.Color(255, 255, 255));
+        confirmCommodityBuy.add(lblCLP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 220, 150, 25));
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel21.setText("Available Balance:");
         confirmCommodityBuy.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 274, -1, -1));
 
         txtAvailableBalance2.setText("jLabel13");
-        confirmCommodityBuy.add(txtAvailableBalance2, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 275, -1, -1));
+        confirmCommodityBuy.add(txtAvailableBalance2, new org.netbeans.lib.awtextra.AbsoluteConstraints(309, 275, 140, -1));
 
         jComboBox3.setBackground(new java.awt.Color(85, 65, 118));
         jComboBox3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -1871,7 +1870,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
             this.investor.getCommoditySellRequests().add(commoditySellRequest);
         }
         else{
-            JOptionPane.showConfirmDialog(this, "You do not have sufficient "+this.selectedCommodity.getName());
+            JOptionPane.showMessageDialog(this, "You do not have sufficient "+this.selectedCommodity.getName());
         }
 
     }//GEN-LAST:event_btnSellCommActionPerformed
@@ -1922,13 +1921,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         populateCommodityBuyRequestsTable();
     }//GEN-LAST:event_jButton19ActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-       
-        
-        
-         
-    }//GEN-LAST:event_jButton20ActionPerformed
-
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         changeScreen(homepage);
     }//GEN-LAST:event_jButton21ActionPerformed
@@ -1966,6 +1958,10 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
+         changeScreen(sellRequests);
+        populateEquitySellRequestsTable();
+        populateCommoditySellRequestsTable();
+        
     }//GEN-LAST:event_jButton24ActionPerformed
 
 
@@ -1995,7 +1991,6 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;

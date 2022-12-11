@@ -7,7 +7,7 @@ package com.stockops.Establishments;
 
 /**
  *
- * @author mridulregmi
+ * @author Shaiz
  */
 public class JobRequest {
     private InvestmentManager applicant;
