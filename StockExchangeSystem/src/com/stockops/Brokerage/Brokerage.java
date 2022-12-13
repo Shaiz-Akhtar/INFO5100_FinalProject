@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mridulregmi
+ * @author shaiz
  */
 public class Brokerage {
     private ArrayList<EquityBroker> equityBrokersDirectory;
