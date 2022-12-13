@@ -550,6 +550,13 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuyActionPerformed
+        
+        if(tblBuyReq.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         EquityBuyRequest buyRequest = this.equityBroker.getEquityBuyRequestById(Integer.parseInt(String.valueOf(tblBuyReq.getValueAt(tblBuyReq.getSelectedRow(), 0))));
         EquityHoldings holdingToAdd = new EquityHoldings();
         Boolean addNewFlag = true;
@@ -602,6 +609,12 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
 
     private void btnSellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSellActionPerformed
 
+       if(tblSellRequests.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         EquitySellRequest sellRequest = this.equityBroker.getEquitySellRequestById(Integer.parseInt(String.valueOf(tblSellRequests.getValueAt(tblSellRequests.getSelectedRow(), 0))));
         EquityHoldings holdingToSell = new EquityHoldings();
         if (sellRequest.getSeller() instanceof RetailInvestor) {
@@ -654,6 +667,13 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
 
+          
+        if(tblBuyReq.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         EquityBuyRequest buyRequest = this.equityBroker.getEquityBuyRequestById(Integer.parseInt(String.valueOf(tblBuyReq.getValueAt(tblBuyReq.getSelectedRow(), 0))));
         InvestorAbstract buyer = buyRequest.getBuyer();
         buyer.setBalance(buyer.getBalance() + (buyRequest.getQuantity() * buyRequest.getEquity().getPrice()));
@@ -664,6 +684,14 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        
+        
+        if(tblSellRequests.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         EquitySellRequest sellRequest = this.equityBroker.getEquitySellRequestById(Integer.parseInt(String.valueOf(tblSellRequests.getValueAt(tblSellRequests.getSelectedRow(), 0))));
         InvestorAbstract seller = sellRequest.getSeller();
         seller.setBalance(seller.getBalance() + (sellRequest.getQuantity() * sellRequest.getEquity().getPrice()));
