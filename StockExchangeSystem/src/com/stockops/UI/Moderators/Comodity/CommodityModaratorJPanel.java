@@ -216,7 +216,9 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         txtSymbol.setText(selectedCommodity.getSymbol());
         txtPrice.setText(String.valueOf(selectedCommodity.getPrice()));
         txtUnit.setText(selectedCommodity.getUnit());
+        btnComdity.setEnabled(false);
         btnModCom.setEnabled(true);
+        
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void btnModComActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModComActionPerformed
@@ -225,7 +227,9 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         this.selectedCommodity.setPrice(Float.parseFloat(txtPrice.getText()));
         this.selectedCommodity.setUnit(txtUnit.getText());
         populateCommodityListTable();
+        btnComdity.setEnabled(true);
         btnModCom.setEnabled(false);
+        clearfeilds();
     }//GEN-LAST:event_btnModComActionPerformed
 
     private void btnComdityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComdityActionPerformed
@@ -272,4 +276,11 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
             model.addRow(row);
         }
     }
+
+    private void clearfeilds() {
+        txtComName.setText("");
+        txtSymbol.setText("");
+        txtPrice.setText("");
+        txtUnit.setText("");       
+        }
 }
