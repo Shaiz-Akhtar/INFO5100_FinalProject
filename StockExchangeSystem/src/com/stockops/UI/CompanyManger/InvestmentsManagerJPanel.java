@@ -629,13 +629,13 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
                         .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addGap(18, 18, 18)
-                                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(btnBuyShare1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(855, Short.MAX_VALUE))
+                        .addComponent(jLabel9)
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
+                        .addComponent(btnBuyShare1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(858, Short.MAX_VALUE))
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 1306, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
@@ -913,6 +913,12 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if(myEquityHoldings.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a share to sell");
+                return;
+
+        }
         this.selectedEquity = this.business.getMarket().getEquityMarket().getEquityByName(String.valueOf(myEquityHoldings.getValueAt(myEquityHoldings.getSelectedRow(), 0)));
         txtShrName1.setText(selectedEquity.getCompany().getName());
         changeScreen(jPanel6);
@@ -936,6 +942,12 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
+        if(tblStockListBuy.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a share to buy");
+                return;
+
+        }
         String stockName = String.valueOf(tblStockListBuy.getValueAt(tblStockListBuy.getSelectedRow(), 0));
         this.selectedEquity = this.business.getMarket().getEquityMarket().getEquityByName(stockName);
         changeScreen(jPanel3);
@@ -958,6 +970,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void btnBuyShare1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuyShare1ActionPerformed
+        try{
         int qty = Integer.parseInt(String.valueOf(txtQtyShare.getText()));
         double price = qty * selectedEquity.getPrice();
         if (price < this.investmentManager.getAssignedCompany().getCaptial()) {
@@ -975,6 +988,11 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
             setAvailableBalance(this.investmentManager.getAssignedCompany().getBalance());
         } else {
             JOptionPane.showMessageDialog(this, "Not enough balance");
+        }
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(this, "Oops something went wrong");
         }
     }//GEN-LAST:event_btnBuyShare1ActionPerformed
 
@@ -1109,11 +1127,38 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        if(txtQtyShare.getText().isBlank())
+        {
+             JOptionPane.showMessageDialog(this, "Please enter a value");
+             return;
+        }
+        try{    
         jLabel21.setText(String.valueOf(this.selectedEquity.getPrice() * Integer.valueOf(txtQtyShare.getText())));
+        }
+        catch(Exception e)
+        {
+           JOptionPane.showMessageDialog(this, "Please enter a number"); 
+           return;
+        }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if(txtQtyShare.getText().isBlank())
+        {
+             JOptionPane.showMessageDialog(this, "Please enter a value");
+             return;
+        }
+        try{
+            
+        
         lblCLP1.setText(String.valueOf(this.selectedEquity.getPrice() * Integer.valueOf(txtQtyShare1.getText())));
+        }
+        catch(Exception e)
+        {
+           JOptionPane.showMessageDialog(this, "Please enter a number");
+           return;
+        }
+        
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed

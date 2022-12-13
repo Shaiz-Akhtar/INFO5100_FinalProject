@@ -698,17 +698,16 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" max="32767" attributes="0"/>
-                              </Group>
-                              <Component id="btnBuyShare1" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jComboBox1" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                          <Component id="btnBuyShare1" min="-2" pref="110" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="855" max="32767" attributes="0"/>
+                  <EmptySpace pref="858" max="32767" attributes="0"/>
               </Group>
               <Component id="jPanel8" alignment="0" pref="1306" max="32767" attributes="0"/>
           </Group>
