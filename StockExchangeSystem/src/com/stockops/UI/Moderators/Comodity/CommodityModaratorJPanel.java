@@ -9,6 +9,7 @@ import com.stockops.Business.EcoSystem;
 import com.stockops.Market.Commodity;
 import com.stockops.Market.Equity;
 import com.stockops.Users.UserAccount;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
 
@@ -234,12 +235,20 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
 
     private void btnComdityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComdityActionPerformed
         Commodity commodity = new Commodity();
+        if(txtComName.getText().isBlank()||txtSymbol.getText().isBlank()||txtPrice.getText().isBlank()||txtUnit.getText().isBlank())
+        {
+            JOptionPane.showMessageDialog(this, "Please enter required details");
+            return;
+        }
+        
         commodity.setName(txtComName.getText());
         commodity.setSymbol(txtSymbol.getText());
         commodity.setPrice(Integer.valueOf(txtPrice.getText()));
         commodity.setUnit(txtUnit.getText());
+        
         this.business.getMarket().getCommodityMarket().getCommodityList().add(commodity);
         populateCommodityListTable();
+        clearfeilds();
     }//GEN-LAST:event_btnComdityActionPerformed
 
 

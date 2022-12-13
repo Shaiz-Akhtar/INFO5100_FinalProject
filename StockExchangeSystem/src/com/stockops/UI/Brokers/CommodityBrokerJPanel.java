@@ -403,6 +403,12 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if(buyRequestTable.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         CommodityBuyRequest buyRequest = this.commodityBroker.getBuyRequestById(Integer.parseInt(String.valueOf(buyRequestTable.getValueAt(buyRequestTable.getSelectedRow(), 0))));
         CommodityHoldings holdingToAdd = new CommodityHoldings();
         Boolean addNewFlag =true;
@@ -425,6 +431,13 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        if(sellRequestTable.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         CommoditySellRequest sellRequest = this.commodityBroker.getSellRequestById(Integer.parseInt(String.valueOf(sellRequestTable.getValueAt(sellRequestTable.getSelectedRow(), 0))));
         CommodityHoldings holdingToSell = new CommodityHoldings();
         for(CommodityHoldings commodityHoldings:((RetailInvestor)sellRequest.getSeller()).getCommodityHoldings()){
@@ -458,6 +471,13 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        
+        if(sellRequestTable.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         CommoditySellRequest sellRequest = this.commodityBroker.getSellRequestById(Integer.parseInt(String.valueOf(sellRequestTable.getValueAt(sellRequestTable.getSelectedRow(), 0))));
         InvestorAbstract seller = sellRequest.getSeller();
         seller.setBalance(seller.getBalance()+(sellRequest.getQuantity()*sellRequest.getCommodity().getPrice()));
@@ -468,6 +488,13 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+
+if(buyRequestTable.getSelectedRow()==-1)
+        {
+            JOptionPane.showMessageDialog(this, "Please select a row to process");
+            return;
+
+        }
         CommodityBuyRequest buyRequest = this.commodityBroker.getBuyRequestById(Integer.parseInt(String.valueOf(buyRequestTable.getValueAt(buyRequestTable.getSelectedRow(), 0))));
         InvestorAbstract buyer=buyRequest.getBuyer();
         buyer.setBalance(buyer.getBalance()+(buyRequest.getQuantity()*buyRequest.getCommodity().getPrice()));
