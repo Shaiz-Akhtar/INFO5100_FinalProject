@@ -467,7 +467,7 @@
                       <Color blue="ff" green="66" red="66" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="2" name="/Users/shaiz/Info 5100/Projects/INFO_PROJECT/StockExchangeSystem/images/newback.jpg"/>
+                      <Image iconType="3" name="/com/stockops/images/newback.jpg"/>
                     </Property>
                   </Properties>
                 </Component>
