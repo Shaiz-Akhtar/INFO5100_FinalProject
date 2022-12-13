@@ -232,7 +232,7 @@ public class MainJFrame extends javax.swing.JFrame {
         btnInvestmentsManager.setBackground(new java.awt.Color(85, 65, 118));
         btnInvestmentsManager.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnInvestmentsManager.setForeground(new java.awt.Color(255, 255, 255));
-        btnInvestmentsManager.setText("Investments Manager");
+        btnInvestmentsManager.setText("Investment Manager");
         btnInvestmentsManager.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInvestmentsManagerActionPerformed(evt);
