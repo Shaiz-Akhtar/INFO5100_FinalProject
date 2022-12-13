@@ -778,6 +778,8 @@ public class MainJFrame extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(this, "Password too weak!");
         }
+        jTextField3.setText("");
+        jTextField4.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
