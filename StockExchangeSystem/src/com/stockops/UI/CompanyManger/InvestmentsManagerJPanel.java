@@ -1258,19 +1258,28 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
         }
 
     }
-
+        
+        
     private void populateStockListTable() {
         DefaultTableModel model = (DefaultTableModel) tblStockListBuy.getModel();
         model.setRowCount(0);
-        for (Equity equity : this.business.getMarket().getEquityMarket().getEquityList()) {
-            if (equity.getCompany() == this.investmentManager.getAssignedCompany()) {
-                continue;
-            }
-            Object[] row = new Object[4];
-            row[0] = equity.getCompany().getName();
-            row[1] = equity.getPrice();
-            row[2] = equity.getCompany().getCaptial();
-            row[3] = "hello";
+//        for (Equity equity : this.business.getMarket().getEquityMarket().getEquityList()) {
+//            if (equity.getCompany() == this.investmentManager.getAssignedCompany()) {
+//                continue;
+//            }
+//            Object[] row = new Object[4];
+//            row[0] = equity.getCompany().getName();
+//            row[1] = equity.getPrice();
+//            row[2] = equity.getCompany().getCaptial();
+//            row[3] = "hello";
+//            model.addRow(row);
+//            
+//            model.setRowCount(0);
+        for(Equity equity: this.business.getMarket().getEquityMarket().getEquityList()){
+            Object[] row= new Object[3];
+            row[0]=equity.getCompany().getName();
+            row[1]=equity.getPrice();
+            row[2]=equity.getCompany().getCaptial();
             model.addRow(row);
         }
     }
