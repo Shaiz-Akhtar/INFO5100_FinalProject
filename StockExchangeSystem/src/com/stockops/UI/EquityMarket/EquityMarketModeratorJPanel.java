@@ -447,6 +447,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         MarketManagementJPanel.add(jBtnupdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 700, 130, 50));
 
         jTxtmarketcap.setEditable(false);
+        jTxtmarketcap.setBackground(new java.awt.Color(255, 255, 255));
         MarketManagementJPanel.add(jTxtmarketcap, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 580, 180, 40));
 
         jtxtprice.addInputMethodListener(new java.awt.event.InputMethodListener() {
@@ -464,6 +465,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         MarketManagementJPanel.add(jtxtprice, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 520, 180, 40));
 
         jTxtCompany.setEditable(false);
+        jTxtCompany.setBackground(new java.awt.Color(255, 255, 255));
         jTxtCompany.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTxtCompanyActionPerformed(evt);
@@ -568,6 +570,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         populateTableShares();
         jTxtmarketcap.setText(String.valueOf(selectedEquity.getCompany().getCaptial()));
         JOptionPane.showMessageDialog(this, "Updated!");
+        clearfeilds();
     }//GEN-LAST:event_jBtnupdateActionPerformed
 
     private void jtxtpriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtpriceActionPerformed
@@ -581,6 +584,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         updateJPanel(MarketManagementJPanel);
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -723,4 +727,10 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         }
         return marketIndex/indexWeightage;
     }
+
+    private void clearfeilds() {
+        jTxtCompany.setText("");
+        jtxtprice.setText("");
+        jTxtmarketcap.setText("");       
+        }
 }
