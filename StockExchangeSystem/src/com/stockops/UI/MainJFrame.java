@@ -780,6 +780,8 @@ public class MainJFrame extends javax.swing.JFrame {
         }
         jTextField3.setText("");
         jTextField4.setText("");
+        jPasswordField2.setText("");
+        jPasswordField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
