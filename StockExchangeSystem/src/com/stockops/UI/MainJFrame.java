@@ -365,7 +365,7 @@ public class MainJFrame extends javax.swing.JFrame {
         homeJPanel.setBackground(new java.awt.Color(54, 33, 89));
 
         jLabel24.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel24.setIcon(new javax.swing.ImageIcon("/Users/shaiz/Info 5100/Projects/INFO_PROJECT/StockExchangeSystem/images/newback.jpg")); // NOI18N
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/stockops/images/newback.jpg"))); // NOI18N
 
         javax.swing.GroupLayout homeJPanelLayout = new javax.swing.GroupLayout(homeJPanel);
         homeJPanel.setLayout(homeJPanelLayout);
