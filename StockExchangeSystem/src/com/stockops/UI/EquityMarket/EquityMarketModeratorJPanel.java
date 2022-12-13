@@ -540,7 +540,15 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jBtnapproveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnapproveActionPerformed
+        
         Equity equity = new Equity();
+        if(listingRequestTable.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a row to process");
+                return;
+
+        }
+        
         String selectedCompanyName=String.valueOf(listingRequestTable.getValueAt(listingRequestTable.getSelectedRow(), 1));
         Company selectedCompany = this.business.getEstablishment().getEstablishmentsModerator().getCompanyByName(selectedCompanyName);
         equity.setCompany(selectedCompany);
@@ -557,10 +565,12 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jBtnapproveActionPerformed
 
     private void tableSharesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableSharesMouseClicked
+        
         this.selectedEquity = this.business.getMarket().getEquityMarket().getEquityByName(String.valueOf(tableShares.getValueAt(tableShares.getSelectedRow(), 0)));
         jTxtCompany.setText(selectedEquity.getCompany().getName());
         jtxtprice.setText(String.valueOf(selectedEquity.getPrice()));
         jTxtmarketcap.setText(String.valueOf(selectedEquity.getCompany().getCaptial()));
+        jBtnupdate.setEnabled(true);
         
     }//GEN-LAST:event_tableSharesMouseClicked
 
@@ -576,6 +586,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         jTxtmarketcap.setText(String.valueOf(selectedEquity.getCompany().getCaptial()));
         JOptionPane.showMessageDialog(this, "Updated!");
         clearfeilds();
+        jBtnupdate.setEnabled(false);
     }//GEN-LAST:event_jBtnupdateActionPerformed
 
     private void jtxtpriceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtpriceActionPerformed
@@ -589,6 +600,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         updateJPanel(MarketManagementJPanel);
+        jBtnupdate.setEnabled(false);
         
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -608,6 +620,16 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jbtndeclineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtndeclineActionPerformed
+       
+        
+        Equity equity = new Equity();
+        if(listingRequestTable.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a row to process");
+                return;
+
+        }
+        
         String selectedCompanyName=String.valueOf(listingRequestTable.getValueAt(listingRequestTable.getSelectedRow(), 1));
         Company selectedCompany = this.business.getEstablishment().getEstablishmentsModerator().getCompanyByName(selectedCompanyName);
         selectedCompany.setListingRequestStatus("Rejected");
