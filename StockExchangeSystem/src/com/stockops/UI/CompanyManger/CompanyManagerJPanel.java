@@ -598,11 +598,18 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtLiabActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        try{
+       
             Company company = new Company();
             if(this.business.getEstablishment().getEstablishmentsModerator().getCompanyByName(txtCompanyName.getText())!=null){
                 JOptionPane.showMessageDialog(this, "Company With the Given Name Already Exists!");
             }
+            else if(txtAsset.getText().isBlank()||txtLiab.getText().isBlank()||txtCompanyName.getText().isBlank())
+            {
+               JOptionPane.showMessageDialog(this, "Please enter all feilds");
+               return;
+            }
+        
+    
             else{
                 company.setName(txtCompanyName.getText());
                 Double assets = Double.parseDouble(txtAsset.getText());
@@ -620,10 +627,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(this, "Company "+company.getName() +" successfully registered! \n"+"    Market Cap:"+String.valueOf(assets-liab));
                 setComponent(homepage);
             }
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(this, "Assets and Liabilities Should Be Numbers!");
-        }
+       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnRequestListingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestListingActionPerformed

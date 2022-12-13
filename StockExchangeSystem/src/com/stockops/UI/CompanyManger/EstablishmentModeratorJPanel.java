@@ -496,6 +496,13 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        if(tableRegisterComp.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a row to process");
+                return;
+
+        }
         String selectedCompanyName=String.valueOf(tableRegisterComp.getValueAt(tableRegisterComp.getSelectedRow(), 0));
         Company selectedCompany = this.business.getEstablishment().getEstablishmentsModerator().getCompanyByName(selectedCompanyName);
         selectedCompany.setLiscenceStatus("Approved");
@@ -505,6 +512,13 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+        if(tableRegisterComp.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a row to process");
+                return;
+
+        }
         String selectedCompanyName=String.valueOf(tableRegisterComp.getValueAt(tableRegisterComp.getSelectedRow(), 0));
         Company selectedCompany = this.business.getEstablishment().getEstablishmentsModerator().getCompanyByName(selectedCompanyName);
         selectedCompany.setLiscenceStatus("Rejected");
@@ -550,18 +564,23 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(this, "Small cap cannot be larger than medium cap");
             }
             else if(mediumCap>=largeCap){
-                JOptionPane.showMessageDialog(this, "Small cap cannot be larger than medium cap");
+                JOptionPane.showMessageDialog(this, "Medium cap cannot be larger than large cap");
             }
             else{
                 this.establishmentsModerator.setSmallCap(smallCap);
                 this.establishmentsModerator.setMediumCap(mediumCap);
                 this.establishmentsModerator.setLargeCap(largeCap);
                 JOptionPane.showMessageDialog(this, "Market Standards Updated");
+                txtSmallCap.setText("");
+                txtMediumCap.setText("");
+                txtLargeCap.setText("");
             }
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(this, "Values must be numbers only!");
+            
         }
+        
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
