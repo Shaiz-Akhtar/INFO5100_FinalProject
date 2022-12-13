@@ -469,7 +469,7 @@ public class MainJFrame extends javax.swing.JFrame {
                             .addComponent(jLabel19)
                             .addComponent(jLabel21)
                             .addComponent(jLabel20))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, Short.MAX_VALUE)
                         .addGroup(investmentManagerJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(investmentManagerJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -492,9 +492,9 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGroup(investmentManagerJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPasswordField5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addGap(45, 45, 45)
                 .addGroup(investmentManagerJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel17))
@@ -513,14 +513,14 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(investmentManagerJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel19)
-                    .addComponent(jPasswordField6, javax.swing.GroupLayout.DEFAULT_SIZE, 91, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                    .addComponent(jPasswordField6, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(investmentManagerJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jPasswordField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
-                .addGap(38, 38, 38)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPasswordField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(173, 173, 173))
+                .addContainerGap(252, Short.MAX_VALUE))
         );
 
         container.add(investmentManagerJPanel, "card5");
@@ -696,10 +696,15 @@ public class MainJFrame extends javax.swing.JFrame {
         UserAccount user=system.getUserDirectory().authenticateUser(jTextField4.getText(), passwordString);
         if(user!=null && user.getRole()==this.role){
             setContainer(user.getRole().createWorkArea(container, user, system));
+            jTextField6.setText("");
+            jPasswordField5.setText("");
         }
         else{
             JOptionPane.showMessageDialog(this, "Invalid Username or Password!");
+             jTextField6.setText("");
+            jPasswordField5.setText("");
         }
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -720,6 +725,12 @@ public class MainJFrame extends javax.swing.JFrame {
             this.system.getEstablishment().getEstablishmentsModerator().getInvestmentManagerDirectory().add((InvestmentManager)selectedUser);
             JOptionPane.showMessageDialog(this, "User Signed In Successfully");
             setContainer(user.getRole().createWorkArea(container, user, system));
+            jTextField7.setText("");
+            jTextField8.setText("");
+            jTextField9.setText("");
+            jTextField1.setText("");
+            jPasswordField6.setText("");
+            jPasswordField7.setText("");        
         }
         
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -784,9 +795,13 @@ public class MainJFrame extends javax.swing.JFrame {
         UserAccount user=system.getUserDirectory().authenticateUser(jTextField2.getText(), passwordString);
         if(user!=null && (user.getRole().getClass()==this.role.getClass())){
             setContainer(user.getRole().createWorkArea(container, user, system));
+            jTextField2.setText("");
+            jPasswordField1.setText(""); 
         }
         else{
             JOptionPane.showMessageDialog(this, "Invalid Username or Password!");
+            jTextField2.setText("");
+            jPasswordField1.setText("");        
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
