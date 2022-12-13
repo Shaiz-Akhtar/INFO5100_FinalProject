@@ -613,6 +613,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         selectedCompany.setListingRequestStatus("Rejected");
         ListingRequest selectedRequest = this.equityMarketModerator.getListingRequestById(Integer.parseInt(String.valueOf(listingRequestTable.getValueAt(listingRequestTable.getSelectedRow(), 0))));
         selectedRequest.setStatus("Reject");
+        this.equityMarketModerator.getListingRequestList().remove(selectedRequest);
         JOptionPane.showMessageDialog(this, "Listing Request Rejected Successfully!");
         populateListingTable();
     }//GEN-LAST:event_jbtndeclineActionPerformed

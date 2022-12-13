@@ -627,8 +627,18 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnRequestListingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestListingActionPerformed
+      
+        if(tableRegisterComp.getSelectedRow()==-1)
+        {
+           JOptionPane.showMessageDialog(this, "Please select a company to list");
+            return;
+
+        }
+        else{
+                
         String selectedCompanyName=String.valueOf(tableRegisterComp.getValueAt(tableRegisterComp.getSelectedRow(), 0));
         Company selectedCompanyForListing = this.business.getEstablishment().getEstablishmentsModerator().getCompanyByName(selectedCompanyName);
+       
         if(selectedCompanyForListing.getLiscenceStatus().equals("Approved")){
             if(selectedCompanyForListing.getListingRequestStatus().equals("Approved")){
                 JOptionPane.showMessageDialog(this, "This company is already listed");
@@ -643,7 +653,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         }
 
     }//GEN-LAST:event_btnRequestListingActionPerformed
-
+    }
     private void txtNumberOfSharesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumberOfSharesActionPerformed
 
         int numberOfShares = Integer.parseInt(txtNumberOfShares.getText());
