@@ -294,6 +294,11 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         jBtnapprove1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jBtnapprove1.setForeground(new java.awt.Color(255, 255, 255));
         jBtnapprove1.setText("Approve");
+        jBtnapprove1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnapprove1ActionPerformed(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel8.setText("Requests List:");
@@ -611,6 +616,10 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(this, "Listing Request Rejected Successfully!");
         populateListingTable();
     }//GEN-LAST:event_jbtndeclineActionPerformed
+
+    private void jBtnapprove1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnapprove1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBtnapprove1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
