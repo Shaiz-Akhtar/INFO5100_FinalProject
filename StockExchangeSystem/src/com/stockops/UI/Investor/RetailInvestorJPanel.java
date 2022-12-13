@@ -1604,6 +1604,12 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        if(tblStockListBuy.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a stock to buy");
+                return;
+
+        }
         String stockName = String.valueOf(tblStockListBuy.getValueAt(tblStockListBuy.getSelectedRow(), 0));
         this.selectedEquity = this.business.getMarket().getEquityMarket().getEquityByName(stockName);
         changeScreen(confirmShareBuy);
@@ -1771,6 +1777,13 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        
+        if(commodityTable.getSelectedRow()==-1)
+        {
+                JOptionPane.showMessageDialog(this, "Please select a commodity to buy");
+                return;
+
+        }
         String commodityName = String.valueOf(commodityTable.getValueAt(commodityTable.getSelectedRow(), 0));
         this.selectedCommodity = this.business.getMarket().getCommodityMarket().getCommodityByName(commodityName);
         changeScreen(confirmCommodityBuy);
