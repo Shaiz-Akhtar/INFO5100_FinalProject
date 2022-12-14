@@ -108,7 +108,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(1000, 1000));
         setLayout(new java.awt.CardLayout());
 
-        registerNew.setBackground(new java.awt.Color(54, 33, 89));
+        registerNew.setBackground(new java.awt.Color(153, 0, 255));
         registerNew.setForeground(new java.awt.Color(255, 255, 255));
         registerNew.setMaximumSize(new java.awt.Dimension(1000, 1000));
         registerNew.setPreferredSize(new java.awt.Dimension(1000, 1000));
@@ -214,7 +214,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
 
         add(registerNew, "card3");
 
-        requestListing.setBackground(new java.awt.Color(255, 255, 255));
+        requestListing.setBackground(new java.awt.Color(153, 0, 255));
 
         txtNumberOfShares.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -307,7 +307,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
 
         add(requestListing, "card4");
 
-        InvestmentManager.setBackground(new java.awt.Color(255, 255, 255));
+        InvestmentManager.setBackground(new java.awt.Color(153, 0, 255));
         InvestmentManager.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -398,7 +398,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
 
         add(InvestmentManager, "card5");
 
-        listingStatusJpanel.setBackground(new java.awt.Color(255, 255, 255));
+        listingStatusJpanel.setBackground(new java.awt.Color(153, 0, 255));
 
         tblListingStatus.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -481,7 +481,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
 
         add(listingStatusJpanel, "card6");
 
-        homepage.setBackground(new java.awt.Color(255, 255, 255));
+        homepage.setBackground(new java.awt.Color(153, 0, 255));
         homepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnNewIM.setBackground(new java.awt.Color(85, 65, 118));

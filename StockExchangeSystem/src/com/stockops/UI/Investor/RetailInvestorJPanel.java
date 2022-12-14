@@ -1514,7 +1514,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(buyRequests, "card12");
 
-        sellRequests.setBackground(new java.awt.Color(255, 255, 255));
+        sellRequests.setBackground(new java.awt.Color(153, 0, 255));
         sellRequests.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
@@ -1693,7 +1693,9 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                 equityHoldingToSell=equityHoldings;
             }
         }
-        
+        try{
+            
+   
         if(Integer.parseInt(txtQtyShare1.getText())<=equityHoldingToSell.getQuantity())
         {
             EquitySellRequest equitySellRequest = new EquitySellRequest();
@@ -1711,6 +1713,9 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         }
         else{
             JOptionPane.showMessageDialog(this, "You do not have sufficient shares");
+        }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Oops something went wrong");
         }
 //        for(EquityHoldings equityHoldings:this.investor.getEquityHoldings()){
 //            if(equityHoldings.getEquity()==selectedEquity){
@@ -1879,7 +1884,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                 commodityToSell=commodityHoldings;
             }
         }
-        
+        try{
         if(Integer.parseInt((txtQtyComm2.getText()))<=commodityToSell.getQuantity()){
             CommoditySellRequest commoditySellRequest = new CommoditySellRequest();
             commoditySellRequest.setCommodity(selectedCommodity);
@@ -1896,6 +1901,11 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         }
         else{
             JOptionPane.showMessageDialog(this, "You do not have sufficient "+this.selectedCommodity.getName());
+        }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(this, "Oops something went wrong!");
+            
         }
 
     }//GEN-LAST:event_btnSellCommActionPerformed

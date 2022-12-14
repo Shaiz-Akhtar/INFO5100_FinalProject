@@ -81,9 +81,10 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
         jButton6 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(54, 33, 98));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         commodityTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -164,7 +165,7 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
 
         add(jPanel1, "card2");
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 0, 255));
 
         sellRequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -281,7 +282,7 @@ public class CommodityBrokerJPanel extends javax.swing.JPanel {
 
         add(jPanel2, "card3");
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(153, 0, 255));
 
         buyRequestTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

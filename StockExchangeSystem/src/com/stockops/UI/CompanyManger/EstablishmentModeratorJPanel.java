@@ -92,7 +92,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
         setRequestFocusEnabled(false);
         setLayout(new java.awt.CardLayout());
 
-        listingrequests.setBackground(new java.awt.Color(54, 33, 89));
+        listingrequests.setBackground(new java.awt.Color(153, 0, 255));
         listingrequests.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setBackground(new java.awt.Color(85, 65, 118));
@@ -177,7 +177,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
 
         add(listingrequests, "card2");
 
-        homepage.setBackground(new java.awt.Color(255, 255, 255));
+        homepage.setBackground(new java.awt.Color(153, 0, 255));
         homepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -254,7 +254,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
 
         add(homepage, "card3");
 
-        allCompanies.setBackground(new java.awt.Color(255, 255, 255));
+        allCompanies.setBackground(new java.awt.Color(153, 0, 255));
 
         tblAllCompanies.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -327,7 +327,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
 
         add(allCompanies, "card4");
 
-        managerDetails.setBackground(new java.awt.Color(255, 255, 255));
+        managerDetails.setBackground(new java.awt.Color(153, 0, 255));
 
         tblInvManager.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -399,7 +399,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
 
         add(managerDetails, "card5");
 
-        industryStandards.setBackground(new java.awt.Color(255, 255, 255));
+        industryStandards.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel4.setText("Small Cap:");
 

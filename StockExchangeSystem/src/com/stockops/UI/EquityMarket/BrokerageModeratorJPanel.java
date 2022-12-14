@@ -54,6 +54,7 @@ public class BrokerageModeratorJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 0, 255));
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Assign a Market");
@@ -92,7 +93,7 @@ public class BrokerageModeratorJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(brokerTable);
 
-        jPanel1.setBackground(new java.awt.Color(85, 65, 118));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1300, 80));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
@@ -120,6 +121,7 @@ public class BrokerageModeratorJPanel extends javax.swing.JPanel {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
+        jLabel5.setBackground(new java.awt.Color(153, 0, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/stockops/UI/EquityMarket/Com Mod.jpg"))); // NOI18N
         jLabel5.setText("jLabel5");
 
