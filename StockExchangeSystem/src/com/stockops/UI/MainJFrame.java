@@ -232,7 +232,7 @@ public class MainJFrame extends javax.swing.JFrame {
         btnInvestmentsManager.setBackground(new java.awt.Color(85, 65, 118));
         btnInvestmentsManager.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnInvestmentsManager.setForeground(new java.awt.Color(255, 255, 255));
-        btnInvestmentsManager.setText("Investment Manager");
+        btnInvestmentsManager.setText("Investments Manager");
         btnInvestmentsManager.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInvestmentsManagerActionPerformed(evt);
@@ -308,11 +308,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setText("Password:");
 
+        txtTitle2.setBackground(new java.awt.Color(54, 33, 89));
         txtTitle2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         txtTitle2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTitle2.setText("PORTAL");
 
-        jButton3.setBackground(new java.awt.Color(85, 65, 118));
+        jButton3.setBackground(new java.awt.Color(54, 33, 89));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Sign In");
@@ -341,7 +342,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addGroup(signInJPanelLayout.createSequentialGroup()
                         .addGap(272, 272, 272)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(1262, Short.MAX_VALUE))
+                .addContainerGap(1310, Short.MAX_VALUE))
         );
         signInJPanelLayout.setVerticalGroup(
             signInJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -372,20 +373,21 @@ public class MainJFrame extends javax.swing.JFrame {
         homeJPanelLayout.setHorizontalGroup(
             homeJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homeJPanelLayout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(jLabel24)
-                .addContainerGap(567, Short.MAX_VALUE))
+                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 1296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 422, Short.MAX_VALUE))
         );
         homeJPanelLayout.setVerticalGroup(
             homeJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homeJPanelLayout.createSequentialGroup()
-                .addGap(129, 129, 129)
-                .addComponent(jLabel24)
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 732, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 237, Short.MAX_VALUE))
         );
 
         container.add(homeJPanel, "card4");
 
+        investmentManagerJPanel.setBackground(new java.awt.Color(54, 33, 89));
+
+        txtTitle1.setBackground(new java.awt.Color(54, 33, 89));
         txtTitle1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         txtTitle1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         txtTitle1.setText("PORTAL");
@@ -396,7 +398,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel15.setText("Password:");
 
-        jButton4.setBackground(new java.awt.Color(85, 65, 118));
+        jButton4.setBackground(new java.awt.Color(54, 33, 89));
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Sign In");
@@ -418,7 +420,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel20.setText("Confirm Password:");
 
-        jButton5.setBackground(new java.awt.Color(85, 65, 118));
+        jButton5.setBackground(new java.awt.Color(54, 33, 89));
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Sign Up");
@@ -477,7 +479,7 @@ public class MainJFrame extends javax.swing.JFrame {
                                 .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jPasswordField6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jPasswordField7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(1226, Short.MAX_VALUE))
+                .addGap(1274, 1274, 1274))
             .addComponent(txtTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         investmentManagerJPanelLayout.setVerticalGroup(
@@ -520,12 +522,12 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(jPasswordField7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(252, Short.MAX_VALUE))
+                .addGap(252, 252, 252))
         );
 
         container.add(investmentManagerJPanel, "card5");
 
-        signupSigninJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        signupSigninJPanel.setBackground(new java.awt.Color(153, 0, 255));
         signupSigninJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
@@ -558,7 +560,7 @@ public class MainJFrame extends javax.swing.JFrame {
         signupSigninJPanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 520, -1, -1));
         signupSigninJPanel.add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, 190, 30));
 
-        jButton1.setBackground(new java.awt.Color(85, 65, 118));
+        jButton1.setBackground(new java.awt.Color(54, 33, 89));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Sign In");
@@ -569,7 +571,7 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         signupSigninJPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 100, 40));
 
-        jButton2.setBackground(new java.awt.Color(85, 65, 118));
+        jButton2.setBackground(new java.awt.Color(54, 33, 89));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Sign Up");
