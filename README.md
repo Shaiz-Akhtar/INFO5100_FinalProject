@@ -1,14 +1,13 @@
 # INFO_PROJECT
 
+Team Members:
+1. Habeebuddin Mir -  002713929
+2. Shaiz Mohammad - 002796856
+3. Christina Raymond - 002746856
+4. Maseerah Khatoon - 002778147
 
-
-
-
-
-
-
-
-
+Introduction:
+The stock market is made up of exchanges such as the New York Stock Exchange and the Bombay Stock Exchange. A particular exchange serves as a market for the shares of the stocks that are listed there by bringing buyers and sellers together. The exchange keeps track of each stock's supply, demand, and price in direct relation to each.
 
 
 
