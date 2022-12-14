@@ -146,7 +146,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
-        jPanel1.setBackground(new java.awt.Color(54, 33, 89));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -276,7 +276,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         add(jPanel1, "card2");
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel5.setText("Available Jobs:");
@@ -415,7 +415,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         add(jPanel2, "card3");
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(153, 0, 255));
 
         tblStockListBuy.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -503,7 +503,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         add(jPanel4, "card4");
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(153, 0, 255));
 
         btnBuyShare1.setBackground(new java.awt.Color(85, 65, 118));
         btnBuyShare1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -674,7 +674,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         add(jPanel3, "card3");
 
-        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel6.setBackground(new java.awt.Color(153, 0, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnSellShare.setBackground(new java.awt.Color(85, 65, 118));
@@ -786,7 +786,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         add(jPanel6, "card3");
 
-        buyRequests2.setBackground(new java.awt.Color(255, 255, 255));
+        buyRequests2.setBackground(new java.awt.Color(153, 0, 255));
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -856,7 +856,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
 
         add(buyRequests2, "card12");
 
-        sellRequests.setBackground(new java.awt.Color(255, 255, 255));
+        sellRequests.setBackground(new java.awt.Color(153, 0, 255));
         sellRequests.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable5.setModel(new javax.swing.table.DefaultTableModel(

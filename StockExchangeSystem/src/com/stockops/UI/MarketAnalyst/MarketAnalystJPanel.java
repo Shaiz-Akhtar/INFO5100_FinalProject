@@ -116,6 +116,7 @@ public class MarketAnalystJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        panelLineChart.setBackground(new java.awt.Color(153, 0, 255));
         panelLineChart.setLayout(new java.awt.BorderLayout());
         add(panelLineChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 450, 210));
 
@@ -126,6 +127,8 @@ public class MarketAnalystJPanel extends javax.swing.JPanel {
             }
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 230, 140, 50));
+
+        jScrollPane2.setBackground(new java.awt.Color(153, 0, 255));
 
         tblAllCompanies.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -142,12 +145,15 @@ public class MarketAnalystJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 480, 520));
 
+        panelPieChart.setBackground(new java.awt.Color(153, 0, 255));
         panelPieChart.setLayout(new java.awt.BorderLayout());
         add(panelPieChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 470, 210));
 
+        panelBarChart.setBackground(new java.awt.Color(153, 0, 255));
         panelBarChart.setLayout(new java.awt.BorderLayout());
         add(panelBarChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, 450, 250));
 
+        panelLineChart2.setBackground(new java.awt.Color(153, 0, 255));
         panelLineChart2.setLayout(new java.awt.BorderLayout());
         add(panelLineChart2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 450, 210));
     }// </editor-fold>//GEN-END:initComponents

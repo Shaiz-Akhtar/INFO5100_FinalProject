@@ -31,7 +31,7 @@
     <Container class="javax.swing.JPanel" name="listingrequests">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="21" red="36" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -239,7 +239,7 @@
     <Container class="javax.swing.JPanel" name="homepage">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -406,7 +406,7 @@
     <Container class="javax.swing.JPanel" name="allCompanies">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -572,7 +572,7 @@
     <Container class="javax.swing.JPanel" name="managerDetails">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -703,7 +703,7 @@
     <Container class="javax.swing.JPanel" name="industryStandards">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>

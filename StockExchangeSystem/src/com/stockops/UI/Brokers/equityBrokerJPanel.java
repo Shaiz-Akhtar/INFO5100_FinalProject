@@ -95,9 +95,10 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
         jPanel4 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
-        homepage.setBackground(new java.awt.Color(54, 33, 98));
+        homepage.setBackground(new java.awt.Color(153, 0, 255));
 
         tableShares.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         tableShares.setModel(new javax.swing.table.DefaultTableModel(
@@ -182,7 +183,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
+                .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addContainerGap())
         );
@@ -228,7 +229,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
 
         add(homepage, "card2");
 
-        buyRequests.setBackground(new java.awt.Color(255, 255, 255));
+        buyRequests.setBackground(new java.awt.Color(153, 0, 255));
 
         tblBuyReq.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         tblBuyReq.setModel(new javax.swing.table.DefaultTableModel(
@@ -358,7 +359,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
 
         add(buyRequests, "card3");
 
-        sellRequest.setBackground(new java.awt.Color(255, 255, 255));
+        sellRequest.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel3.setText("Sell Requests:");
@@ -451,7 +452,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout sellRequestLayout = new javax.swing.GroupLayout(sellRequest);
@@ -487,7 +488,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
 
         add(sellRequest, "card4");
 
-        marketNotAssigned.setBackground(new java.awt.Color(255, 255, 255));
+        marketNotAssigned.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel7.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel7.setText("You have not been assigned a market yet!");
@@ -543,7 +544,7 @@ public class EquityBrokerJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addContainerGap(496, Short.MAX_VALUE))
+                .addContainerGap(492, Short.MAX_VALUE))
         );
 
         add(marketNotAssigned, "card5");

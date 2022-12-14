@@ -27,7 +27,7 @@
     <Container class="javax.swing.JPanel" name="registerNew">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="59" green="21" red="36" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -259,7 +259,7 @@
     <Container class="javax.swing.JPanel" name="requestListing">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -407,7 +407,7 @@
     <Container class="javax.swing.JPanel" name="InvestmentManager">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -645,7 +645,7 @@
     <Container class="javax.swing.JPanel" name="listingStatusJpanel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -809,7 +809,7 @@
     <Container class="javax.swing.JPanel" name="homepage">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+          <Color blue="ff" green="0" red="99" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
