@@ -136,7 +136,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jSplitPane2.setBackground(new java.awt.Color(0, 51, 51));
         jSplitPane2.setDividerLocation(250);
 
-        rolesPanal.setBackground(new java.awt.Color(54, 33, 89));
+        rolesPanal.setBackground(new java.awt.Color(153, 0, 255));
         rolesPanal.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         btnDayTrader.setBackground(new java.awt.Color(85, 65, 118));
@@ -232,7 +232,7 @@ public class MainJFrame extends javax.swing.JFrame {
         btnInvestmentsManager.setBackground(new java.awt.Color(85, 65, 118));
         btnInvestmentsManager.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnInvestmentsManager.setForeground(new java.awt.Color(255, 255, 255));
-        btnInvestmentsManager.setText("Investment Manager");
+        btnInvestmentsManager.setText("Investments Manager");
         btnInvestmentsManager.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInvestmentsManagerActionPerformed(evt);
@@ -296,11 +296,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane2.setLeftComponent(rolesPanal);
 
-        container.setBackground(new java.awt.Color(255, 255, 255));
+        container.setBackground(new java.awt.Color(153, 0, 255));
         container.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         container.setLayout(new java.awt.CardLayout());
 
-        signInJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        signInJPanel.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel11.setText("Username:");
@@ -341,7 +341,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addGroup(signInJPanelLayout.createSequentialGroup()
                         .addGap(272, 272, 272)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(1262, Short.MAX_VALUE))
+                .addContainerGap(1286, Short.MAX_VALUE))
         );
         signInJPanelLayout.setVerticalGroup(
             signInJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -357,12 +357,12 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel12))
                 .addGap(37, 37, 37)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(631, Short.MAX_VALUE))
+                .addContainerGap(642, Short.MAX_VALUE))
         );
 
         container.add(signInJPanel, "card3");
 
-        homeJPanel.setBackground(new java.awt.Color(54, 33, 89));
+        homeJPanel.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel24.setBackground(new java.awt.Color(102, 102, 255));
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/stockops/images/newback.jpg"))); // NOI18N
@@ -374,17 +374,19 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(homeJPanelLayout.createSequentialGroup()
                 .addGap(115, 115, 115)
                 .addComponent(jLabel24)
-                .addContainerGap(567, Short.MAX_VALUE))
+                .addContainerGap(579, Short.MAX_VALUE))
         );
         homeJPanelLayout.setVerticalGroup(
             homeJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homeJPanelLayout.createSequentialGroup()
                 .addGap(129, 129, 129)
                 .addComponent(jLabel24)
-                .addContainerGap(164, Short.MAX_VALUE))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
 
         container.add(homeJPanel, "card4");
+
+        investmentManagerJPanel.setBackground(new java.awt.Color(153, 0, 255));
 
         txtTitle1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         txtTitle1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -477,7 +479,7 @@ public class MainJFrame extends javax.swing.JFrame {
                                 .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jPasswordField6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jPasswordField7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(1226, Short.MAX_VALUE))
+                .addContainerGap(1250, Short.MAX_VALUE))
             .addComponent(txtTitle1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         investmentManagerJPanelLayout.setVerticalGroup(
