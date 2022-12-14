@@ -96,10 +96,10 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Listing Request");
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
-        MarketModeratorHomepage.setBackground(new java.awt.Color(54, 33, 89));
+        MarketModeratorHomepage.setBackground(new java.awt.Color(153, 0, 255));
         MarketModeratorHomepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton2.setBackground(new java.awt.Color(85, 65, 118));
@@ -150,7 +150,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
 
         add(MarketModeratorHomepage, "card2");
 
-        ListingRequestJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        ListingRequestJPanel.setBackground(new java.awt.Color(153, 0, 255));
         ListingRequestJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         listingRequestTable.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
@@ -254,7 +254,7 @@ public class EquityMarketModeratorJPanel extends javax.swing.JPanel {
 
         add(ListingRequestJPanel, "card3");
 
-        DelistingRequest.setBackground(new java.awt.Color(255, 255, 255));
+        DelistingRequest.setBackground(new java.awt.Color(153, 0, 255));
 
         tableManagers2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
         tableManagers2.setModel(new javax.swing.table.DefaultTableModel(

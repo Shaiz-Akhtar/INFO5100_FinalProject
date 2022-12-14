@@ -61,6 +61,7 @@ public class CommodityModaratorJPanel extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
         jPanel1.setBackground(new java.awt.Color(54, 33, 89));

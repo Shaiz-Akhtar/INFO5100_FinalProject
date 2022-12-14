@@ -86,6 +86,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
         jButton8 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setMaximumSize(new java.awt.Dimension(1000, 1000));
         setPreferredSize(new java.awt.Dimension(1000, 1000));
         setRequestFocusEnabled(false);
@@ -302,7 +303,7 @@ public class EstablishmentModeratorJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton7)
                     .addComponent(jLabel10))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout allCompaniesLayout = new javax.swing.GroupLayout(allCompanies);

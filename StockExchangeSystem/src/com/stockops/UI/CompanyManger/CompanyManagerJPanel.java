@@ -104,6 +104,7 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setMaximumSize(new java.awt.Dimension(1000, 1000));
         setLayout(new java.awt.CardLayout());
 
@@ -256,14 +257,14 @@ public class CompanyManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(jButton5)
-                .addContainerGap(977, Short.MAX_VALUE))
+                .addContainerGap(972, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jButton5)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout requestListingLayout = new javax.swing.GroupLayout(requestListing);
