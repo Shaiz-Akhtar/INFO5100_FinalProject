@@ -688,6 +688,8 @@ public class MainJFrame extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(this, "Invalid Username or Password!");
         }
+        jTextField5.setText("");
+        jPasswordField4.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
