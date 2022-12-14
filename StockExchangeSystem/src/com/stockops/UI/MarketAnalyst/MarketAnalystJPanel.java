@@ -151,11 +151,11 @@ public class MarketAnalystJPanel extends javax.swing.JPanel {
 
         panelBarChart.setBackground(new java.awt.Color(153, 0, 255));
         panelBarChart.setLayout(new java.awt.BorderLayout());
-        add(panelBarChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, 450, 250));
+        add(panelBarChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, 380, 220));
 
         panelLineChart2.setBackground(new java.awt.Color(153, 0, 255));
         panelLineChart2.setLayout(new java.awt.BorderLayout());
-        add(panelLineChart2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, 450, 210));
+        add(panelLineChart2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 510, 420, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
