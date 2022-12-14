@@ -202,9 +202,10 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jPanel15 = new javax.swing.JPanel();
         jButton22 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
-        homepage.setBackground(new java.awt.Color(54, 33, 89));
+        homepage.setBackground(new java.awt.Color(153, 0, 255));
         homepage.setMaximumSize(new java.awt.Dimension(1300, 800));
         homepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -325,7 +326,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(homepage, "card2");
 
-        confirmShareBuy.setBackground(new java.awt.Color(54, 33, 89));
+        confirmShareBuy.setBackground(new java.awt.Color(153, 0, 255));
         confirmShareBuy.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBuyShare1.setBackground(new java.awt.Color(85, 65, 118));
@@ -450,7 +451,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(confirmShareBuy, "card3");
 
-        selectShareBuy.setBackground(new java.awt.Color(255, 255, 255));
+        selectShareBuy.setBackground(new java.awt.Color(153, 0, 255));
 
         tblStockListBuy.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -542,7 +543,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(selectShareBuy, "card4");
 
-        confirmShareSell.setBackground(new java.awt.Color(255, 255, 255));
+        confirmShareSell.setBackground(new java.awt.Color(153, 0, 255));
 
         btnSellShare.setBackground(new java.awt.Color(85, 65, 118));
         btnSellShare.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -635,7 +636,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                 .addComponent(jButton12)
                 .addGap(256, 256, 256)
                 .addComponent(jLabel33)
-                .addContainerGap(1255, Short.MAX_VALUE))
+                .addContainerGap(1261, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -644,7 +645,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel33)
                     .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout confirmShareSellLayout = new javax.swing.GroupLayout(confirmShareSell);
@@ -719,7 +720,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(confirmShareSell, "card3");
 
-        addBalance.setBackground(new java.awt.Color(255, 255, 255));
+        addBalance.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel16.setText("Available Balance:");
@@ -814,7 +815,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(addBalance, "card7");
 
-        selectCommodityBuy.setBackground(new java.awt.Color(255, 255, 255));
+        selectCommodityBuy.setBackground(new java.awt.Color(153, 0, 255));
 
         commodityTable.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         commodityTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -898,7 +899,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(selectCommodityBuy, "card8");
 
-        confirmCommodityBuy.setBackground(new java.awt.Color(255, 255, 255));
+        confirmCommodityBuy.setBackground(new java.awt.Color(153, 0, 255));
         confirmCommodityBuy.setForeground(new java.awt.Color(255, 255, 255));
         confirmCommodityBuy.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1021,7 +1022,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel35)
                     .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -1043,7 +1044,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(confirmCommodityBuy, "card3");
 
-        confirmCommoditySell.setBackground(new java.awt.Color(255, 255, 255));
+        confirmCommoditySell.setBackground(new java.awt.Color(153, 0, 255));
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel23.setText("Quantity");
@@ -1166,9 +1167,8 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
                             .addGroup(confirmCommoditySellLayout.createSequentialGroup()
                                 .addGroup(confirmCommoditySellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(lblCLP3, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)
-                                    .addGroup(confirmCommoditySellLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jComboBox4, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(txtQtyComm2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE)))
+                                    .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtQtyComm2, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
                                 .addGap(41, 41, 41)
                                 .addComponent(lblCommUnit)
                                 .addGap(41, 41, 41)
@@ -1215,13 +1215,12 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(confirmCommoditySell, "card9");
 
-        shares.setBackground(new java.awt.Color(255, 255, 255));
+        shares.setBackground(new java.awt.Color(153, 0, 255));
         shares.setPreferredSize(new java.awt.Dimension(1300, 700));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("My Holdings:");
 
-        myEquityHoldings.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         myEquityHoldings.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -1281,7 +1280,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1322,7 +1321,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(shares, "card10");
 
-        commodities.setBackground(new java.awt.Color(255, 255, 255));
+        commodities.setBackground(new java.awt.Color(153, 0, 255));
         commodities.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -1411,7 +1410,7 @@ public class RetailInvestorJPanel extends javax.swing.JPanel {
 
         add(commodities, "card11");
 
-        buyRequests.setBackground(new java.awt.Color(255, 255, 255));
+        buyRequests.setBackground(new java.awt.Color(153, 0, 255));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

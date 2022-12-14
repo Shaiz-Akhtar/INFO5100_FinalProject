@@ -113,7 +113,7 @@ public class MarketAnalystJPanel extends javax.swing.JPanel {
         panelBarChart = new javax.swing.JPanel();
         panelLineChart2 = new javax.swing.JPanel();
 
-        setBackground(new java.awt.Color(54, 33, 89));
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelLineChart.setLayout(new java.awt.BorderLayout());

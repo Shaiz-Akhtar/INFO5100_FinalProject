@@ -143,6 +143,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
         jPanel11 = new javax.swing.JPanel();
         jButton24 = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(153, 0, 255));
         setLayout(new java.awt.CardLayout());
 
         jPanel1.setBackground(new java.awt.Color(54, 33, 89));
@@ -380,7 +381,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(217, 217, 217)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(586, Short.MAX_VALUE))
+                .addContainerGap(592, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -460,14 +461,14 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addComponent(jButton9)
-                .addContainerGap(1158, Short.MAX_VALUE))
+                .addContainerGap(1153, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jButton9)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -596,7 +597,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(jButton11)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -635,8 +636,8 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                         .addGap(83, 83, 83)
                         .addComponent(btnBuyShare1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(858, Short.MAX_VALUE))
-            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 1306, Short.MAX_VALUE)
+                .addContainerGap(880, Short.MAX_VALUE))
+            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 1312, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -840,7 +841,7 @@ public class InvestmentsManagerJPanel extends javax.swing.JPanel {
                 .addGroup(buyRequests2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30))
-                .addContainerGap(648, Short.MAX_VALUE))
+                .addContainerGap(654, Short.MAX_VALUE))
         );
         buyRequests2Layout.setVerticalGroup(
             buyRequests2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

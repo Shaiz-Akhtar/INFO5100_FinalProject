@@ -302,6 +302,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         signInJPanel.setBackground(new java.awt.Color(153, 0, 255));
 
+        jLabel11.setBackground(new java.awt.Color(153, 0, 255));
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel11.setText("Username:");
 
@@ -527,7 +528,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.add(investmentManagerJPanel, "card5");
 
-        signupSigninJPanel.setBackground(new java.awt.Color(255, 255, 255));
+        signupSigninJPanel.setBackground(new java.awt.Color(153, 0, 255));
         signupSigninJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
