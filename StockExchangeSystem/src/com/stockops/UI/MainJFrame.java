@@ -541,6 +541,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel5.setText("Name:");
         signupSigninJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, -1));
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
         signupSigninJPanel.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 190, 30));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
@@ -778,6 +784,10 @@ public class MainJFrame extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(this, "Password too weak!");
         }
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jPasswordField2.setText("");
+        jPasswordField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -790,7 +800,13 @@ public class MainJFrame extends javax.swing.JFrame {
         else{
             JOptionPane.showMessageDialog(this, "Invalid Username or Password!");
         }
+        jTextField2.setText("");
+        jPasswordField1.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
